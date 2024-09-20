@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin문제확인</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .wrap{
+      /* 1 margin 문제 */
+      /* 부모가 내용이 없을 경우 자식의 margin-top 부모가 가져오는 문제
+      자식 margin-top: x 
+      부모 padding-top: o*/
+      margin:0 50px;
+      background-color: #ccc;
+      padding-top: 50px;
+    }
+    .box{
+      width: 200px;
+      height: 100px;
+      border: 1px solid #000;
+      background-color: #f58;
+    }
+    /* 2 margin 문제-형제들의 겹침 */
+    /* 인접한 형제들의 margin-bottom과 margin-top이 겹쳐지는 현상 해결
+    margin-bottom으로 한방향으로 지정
+    ex- magin-bottom: 80px */
+    .box1{
+      /* margin-top: 50px; */
+      margin-bottom: 80px;
+    }
+    .box2{
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- .box.box$*3>{내용 box$} -->
+    <div class="box box1">내용 box1</div>
+    <div class="box box2">내용 box2</div>
+    <div class="box box3">내용 box3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>inline박스모델</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .wrap{margin: 50px;}
+    /* block div box 모델 */
+    .box{
+      width: 300px;
+      height: 100px;
+      padding:2em 3em;
+      border: 10px dashed #f00;
+      background-color: #ccc;
+    }
+    span{
+      /* width: 100px;
+      height: 100px;
+      padding: 50px 100px;
+      margin: 5em; */
+      /* padding 수평 0 */
+      padding:0 2em;
+      border: 3px dashed #f00;
+      background-color: #0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- .box>lorem -->
+    <div class="box">
+      Lorem <span>ipsum</span> dolor sit, amet consectetur adipisicing elit. Quae qui nam aliquid, porro facilis voluptatibus, et eaque similique, necessitatibus ipsa temporibus. Autem perspiciatis eveniet cupiditate consequuntur possimus, illum dolorem molestias?
+    </div>
+  </div>
+</body>
+</html>
