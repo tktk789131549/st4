@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>backrground-attachmant</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .sect{height: 50vh;}
+    /* .sect1{background-color: #f6f;}
+    .sect2{background-color: #6f6;}
+    .sect3{background-color: #f66;}
+    .sect4{background-color: #66f;} */
+    .sect:nth-child(1){background-color: #f6f;}
+    .sect:nth-child(2){background-color: #6f6;}
+    .sect:nth-child(3){background-color: #f66;}
+    .sect:last-child{background-color: #66f;}
+
+    /* 배경이미지 반복x */
+    .sect1{background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+  /* 배경이미지 위치를 가운데 아래에 맞추기 */
+  background-position: center bottom;
+  background-attachment: scroll;
+  /* 백그라운드 어테치먼트 기본값= 스크롤 */
+  }
+   .sect3{
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    /* 배경이미지의 기준이 브라우저를 기준으로 배치됨 */
+   }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- section.sect.sect$*4>.inner>p.title>{section$} -->
+    <section class="sect sect1">
+      <div class="inner">
+        <p class="title">section1</p>
+      </div>
+    </section>
+    <section class="sect sect2">
+      <div class="inner">
+        <p class="title">section2</p>
+      </div>
+    </section>
+    <section class="sect sect3">
+      <div class="inner">
+        <p class="title">section3</p>
+      </div>
+    </section>
+    <section class="sect sect4">
+      <div class="inner">
+        <p class="title">section4</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
