@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스프라이트</title>
+    <style>
+      *{margin: 0; padding: 0;}
+      .social__wrap{
+        padding: 20px 50px;
+      }
+      .social__list{list-style: none;}
+      .social__item{
+        display: inline-block;
+        margin: 0 6px;
+        /* background-color: #ccc; */
+        /* padding: 10px; */
+      }
+      .social__link{
+        display: block;
+        width:52px; height:52px;
+        /* background: #ff3; */
+        background-image: url(images/desktop.png);
+        /* background-position:-501px -152px; */
+      }
+      .social__item:nth-child(1) a.social__link{background-position: -501px -155px;}
+      .social__item:nth-child(2) a.social__link{background-position: -553px -51px;}
+      .social__item:nth-child(3) a.social__link{background-position: -362px -464px;}
+      .social__item:nth-child(4) a.social__link{background-position: -501px -362px;}
+      .social__item:nth-child(5) a.social__link{background-position: -553px -259px;}
+      .social__item:nth-child(6) a.social__link{background-position: -553px -363px;}
+
+      .social__link span.blind{
+        display:block;
+        text-indent: -9999px;
+        width: 1px; height: 1px;
+        font-size: 1px;
+        color: transparent;
+        overflow: hidden;
+        /* background-color: #f00; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>스프라이트 sprite</h1>
+    <ol>
+      <li>성능 최적화</li>
+      <li>서버 요청을 줄이기 1요청</li>
+      <li>클라이언트의 캐시사용</li>
+      <li>여러개의 아이콘 1개의 투명 색상을 지원하는 이미지 저장</li>
+      <li>잘못하면 옆의 다른 이미지가 노출될 가능성</li>
+      <li>&lt;background-position&gt;으로 스프라이트 좌표 지정</li>
+    </ol>
+    <hr>
+
+    <!-- ul.social___list>li.social__item*6>a.social__link>span.blind -->
+    <div class="social__wrap">
+      <ul class="social___list">
+        <li class="social__item">
+          <a href="" class="social__link"><span class="blind">1</span></a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link"><span class="blind">2</span></a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link"><span class="blind">3</span></a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link"><span class="blind">4</span></a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link"><span class="blind">5</span></a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link"><span class="blind">6</span></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
