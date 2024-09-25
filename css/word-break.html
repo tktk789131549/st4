@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word-break</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .box{margin: 20px auto; width: 400px; border: 1px solid #000;}
+    .box1{
+      word-break: keep-all;
+    }
+    .box2{
+      word-break: normal;
+      text-align: center;
+    }
+    .box3{
+      /*  영어도 단어단위 word wrap아니라 문자단위로 wrap */
+      word-break: break-all;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="box box1">이자노시의 암그기안다 갈맨지멀, 벤사앗은 이리울이요 벙승다는 뎌디면서 사단 난의고 버볌니량에그가 이한을까 생옵니다 존모앤이고 훈자차됭은 덪가잔더라온다 몬암녑에 미세이안에서 옹서브일, 개체릴이를 았거훈간줘아다</div>
+  <div class="box box2">이자노시의 암그기안다 갈맨지멀, 벤사앗은 이리울이요 벙승다는 뎌디면서 사단 난의고 버볌니량에그가 이한을까 생옵니다 존모앤이고 훈자차됭은 덪가잔더라온다 몬암녑에 미세이안에서 옹서브일, 개체릴이를 았거훈간줘아다</div>
+  <div class="box box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium ullam quis sapiente impedit inventore explicabo atque labore molestiae voluptates.</div>
+  <div class="box box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium ullam quis sapiente impedit inventore explicabo atque labore molestiae voluptates.</div>
+</body>
+</html>
