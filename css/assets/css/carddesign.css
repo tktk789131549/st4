@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* RESET */
+*{margin: 0; padding: 0;
+box-sizing: border-box;}
+
+/* 테스트 화면용 */
+/* body{ background-color: #ff9;} */
+.wrap{
+  margin: 50px;
+}
+
+/* 카드 디자인 */
+.card{
+width: 300px;
+border: 1px solid #efefef;
+
+/* 테스트 후 삭제 */
+margin-bottom: 20px;
+}
+.card .card__thumbnail{
+  /* background-color: #ff6; */
+}
+.card .card__thumbnail a{
+  /* 부모의 너비를 따르기 위해서 */
+  /* display: block; */
+}
+.card .card__thumbnail a img{
+  display: block;
+  /* max-width: 100%; */
+
+  /* 부모의 너비르 따라라 */
+  /* height를 생략하면 원래 이미지의 가로세로 비율을 유지 */
+  width: 100%;
+}
+
+.card .card__description{
+  padding: 1rem 0.8rem;
+  background-color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  border-top: 1px solid #efefef;
+}
+.card .card__description .card__title{
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.card .card__description .card__spec{
+  
+}
