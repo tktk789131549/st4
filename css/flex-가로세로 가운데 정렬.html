@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플렉스 가로세로 가운데 정렬</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .container{
+      background-color: #ccc;
+    }
+    .flex-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .item{
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+      width: 30rem;
+      padding: 1rem 2rem;
+      background-color: #ff6;
+    }
+    .item .title{
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container flex-container">
+      <div class="item">
+        <p class="title">섹션 제목</p>
+        <p class="desc">여러 줄 설명이 계속 여러 줄 설명이 계속 여러 줄 설명이 계속 여러 줄 설명이 계속 여러 줄 설명이 계속</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
