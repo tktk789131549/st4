@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>youtube-반응형</title>
+  <style>
+    /* iframe, video, img 미디어를 두개의 블럭레벨 조상이 있는 구조 */
+    .media-box{
+      display: block;
+      width: 80%;
+      max-width: 760px;
+      min-width: 340px;
+    }
+    .media-box .media-wrap{
+      display: block;
+      aspect-ratio: 16 / 9;
+      /* position: relative; */
+      /* padding-top: 56.25%; */
+    }
+    .media-box .media-wrap iframe{
+      /* position: absolute; */
+      display: block;
+      width: 100%; height: 100%;
+      /* left: 0; top: 0; */
+    }
+  </style>
+</head>
+<body>
+  <!-- .media-box>.media-wrap>iframe -->
+  <div class="media-box">
+    <div class="media-wrap">
+      <iframe src="https://www.youtube.com/embed/Kz2BsKX04ek?si=j4n9EvV5WmviiB8u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  </div>
+  <!-- iframe의 width, height 제거 -->
+  
+</body>
+</html>

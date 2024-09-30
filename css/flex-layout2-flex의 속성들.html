@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex layout2-속성들</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .wrap{
+      width: 85%; margin: 50px auto;
+      background-color: #ccc;
+    }
+    .container{
+      width: 600px;
+      background-color: magenta;
+      gap: 2px;
+    }
+    .item{
+      background-color: dodgerblue;
+      padding: 0.5em;
+    }
+    /* 여기서부터 플렉스 속성 */
+
+    /* 1. 플렉스 콘테이너 선언
+    2. 플렉스 아이템의 방향 결정
+    3. 플렉스 아이템의 확장 수축 크기 결정
+    4. 만약 플렉스 아이템의 크기 총합이 부모 컨테이너의 크기보다 클 경우 wrap(줄바꿈) 판단
+    5. 플렉스 컨테이너의 정렬 판단
+    6. 플렉스 아이템의 정렬 판단*/
+
+    /* 플렉스 컨테이너 선언 */
+    /* 디스플레이: 플렉스 -> 컨테이너
+    컨테이너 직계자식 -> 플렉스 아이템 */
+    .flex-container{
+      display: flex;
+    }
+
+    /* 플렉스 아이템의 방향 결정 
+    플렉스의 주축과 교차축의 방향 결정*/
+    .flex-container{
+      flex-direction: row; /*수평*/
+      /* flex-direction: column; */ /*수직*/
+    }
+
+    /* 플렉스 아이템 확장 수축크기 설정
+    flex-shrink: 1; -> 수축 여부 
+    flex-grow: 0; -> 아이템 확장 여부
+    flex-basis: auto; -> 크기를 지정하는 알고리즘 결정 width/height 지정*/
+    .item{
+      /* flex-shrink: 0; */
+      /* flex-grow: 0; */
+      /* flex-basis: auto; */
+      flex: none; /*위 3줄과 같음*/
+      /* 주축의 방향에 맞게 width, height 지정 */
+      width: 150px;
+    }
+
+    .flex-container{
+      flex-wrap: wrap;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container flex-container">
+      <div class="item item1">item1</div>
+      <div class="item item2">item2</div>
+      <div class="item item3">item3</div>
+      <div class="item item4">item4</div>
+      <div class="item item5">item5</div>
+      <div class="item item6">item6</div>
+      <div class="item item7">item7</div>
+      <div class="item item8">item8</div>
+      <div class="item item9">item9</div>
+      <div class="item item10">item10</div>
+    </div>
+  </div>
+</body>
+</html>
