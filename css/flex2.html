@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex2 - 양끝정렬</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .wrap{}
+    .header{
+      padding: 1rem 0;
+      background-color: #ccc;
+    }
+    .header .logo{
+      width: 100px;
+      height: 100px;
+      background-color: #ff6;
+    }
+    .header .toparea-stat{
+      width: 150px; padding: 0.5rem 0;
+    background-color: #6ff;
+
+    /* .toparea-stat를 container 오른쪽에 margin이용 
+    flex에서 margin: auto;는 container의 여유공간을 알아서 계산해서 사용*/
+  margin-left: auto;/*flex container의 여유공간*/}
+    /* flex관련 선언 */
+    .flex-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      /* justify-content: space-between; */
+      /* .toparea-stat를 container 오른쪽에 margin이용 */
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .item{
+      flex-grow: 0; /*기본값이라 생략 가능*/
+      flex-shrink: 1; /*기본값이라 생략 가능*/
+      flex-basis: auto; /*기본값이라 생략 가능*/
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header flex-container">
+      <h1 class="logo item">logo</h1>
+<div class="toparea-stat item">기능 메뉴</div>
+    </header>
+  </div>
+</body>
+</html>

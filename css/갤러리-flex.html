@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/gallery-float.css">
+  <style>
+    /* media-box */
+    /* 너비를 지정 width -> 부모의 너비를 따름 */
+    .card__thumbnail{
+      width: 100%;
+    }
+    /* img-wrap */
+    /* 370:483 -> 1.3054 *100
+    padding-top: 130.54% */
+    .card__thumbnail a{
+      padding-top: 130.54%;
+      position: relative;
+    }
+    /* img */
+    /* position:absolute;  */
+    .card__thumbnail a img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0; top: 0;
+      /* 기본 370:483비율이 아닌 이미지를 위해 */
+      object-fit: cover;
+      object-position: center center;
+    }
+    .card__list ul.card__wrap{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .card__list li.card__item{
+      float: none;
+      margin: 0;
+      /* flex: auto; */
+      flex: none;
+    }
+   
+
+  </style>
+</head>
+<body>
+  <div class="warp">
+    <div class="card__list">
+      <ul class="card__wrap clearfix">
+        <li class="card__item">
+          <div class="card">
+            <div class="card__thumbnail">
+              <a href="">
+                <img src="./background/images/bg.jpg" alt="">
+              </a>
+            </div>
+            <div class="card__description">
+              <div class="card__title">제목 title</div>
+              <div class="card__spec">
+                <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 두번째 li에 크기가 다른 이미지 삽입 -->
+        <li class="card__item">
+          <div class="card">
+            <div class="card__thumbnail">
+              <a href="">
+                <img src="assets/images/3f0c7b3663a5a8fdd5fbd8ef7c52e230.png" alt="">
+              </a>
+            </div>
+            <div class="card__description">
+              <div class="card__title">제목 title</div>
+              <div class="card__spec">
+                <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="card__item">
+          <div class="card">
+            <div class="card__thumbnail">
+              <a href="">
+                <img src="./background/images/bg.jpg" alt="">
+              </a>
+            </div>
+            <div class="card__description">
+              <div class="card__title">제목 title</div>
+              <div class="card__spec">
+                <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="card__item">
+          <div class="card">
+            <div class="card__thumbnail">
+              <a href="">
+                <img src="./background/images/bg.jpg" alt="">
+              </a>
+            </div>
+            <div class="card__description">
+              <div class="card__title">제목 title</div>
+              <div class="card__spec">
+                <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="card__item">
+          <div class="card">
+            <div class="card__thumbnail">
+              <a href="">
+                <img src="./background/images/bg.jpg" alt="">
+              </a>
+            </div>
+            <div class="card__description">
+              <div class="card__title">제목 title</div>
+              <div class="card__spec">
+                <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="card__item">
+          <div class="card">
+            <div class="card__thumbnail">
+              <a href="">
+                <img src="./background/images/bg.jpg" alt="">
+              </a>
+            </div>
+            <div class="card__description">
+              <div class="card__title">제목 title</div>
+              <div class="card__spec">
+                <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="card__item">
+          <div class="card">
+            <div class="card__thumbnail">
+              <a href="">
+                <img src="./background/images/bg.jpg" alt="">
+              </a>
+            </div>
+            <div class="card__description">
+              <div class="card__title">제목 title</div>
+              <div class="card__spec">
+                <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="card__item">
+          <div class="card">
+            <div class="card__thumbnail">
+              <a href="">
+                <img src="./background/images/bg.jpg" alt="">
+              </a>
+            </div>
+            <div class="card__description">
+              <div class="card__title">제목 title</div>
+              <div class="card__spec">
+                <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="card__item">
+          <div class="card">
+            <div class="card__thumbnail">
+              <a href="">
+                <img src="./background/images/bg.jpg" alt="">
+              </a>
+            </div>
+            <div class="card__description">
+              <div class="card__title">제목 title</div>
+              <div class="card__spec">
+                <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div> 
+</body>
+</html>
