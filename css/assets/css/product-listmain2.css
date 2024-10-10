@@ -15,7 +15,7 @@ body, code {
   color: #000;
   background: #fff;
 }
-
+컴온셀렉트->뷰티 best item + 마일드 hover시 박스섀도우 표시
 /* product-listmain */
 .ec-base-product{}
 .ec-base-product .prdList{
@@ -27,6 +27,7 @@ body, code {
   display: inline-block; /*li옆 다른 li를 오게하기 위해서*/
   font-size: 13px;
   line-height: 1;
+  overflow: hidden;
 }
 /* 메인분류 상품 목록 단 처리 */
 .ec-base-product .prdList.grid2 li{width: 50%;}
@@ -35,7 +36,9 @@ body, code {
 .ec-base-product .prdList.grid5 li{width: 20%;}
 
 .ec-base-product .prdList .prdList__item{
-  margin:0 10px;
+  margin:10px;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 .ec-base-product .prdList .thumbnail{
@@ -47,6 +50,9 @@ body, code {
 }
 .ec-base-product .prdList .thumbnail>a{
   display: block;
+}
+.ec-base-product .prdList .prdList__item:hover .thumbnail{
+ box-shadow: 0px 0px 8px rgba(0,0,0,0.5); 
 }
 .ec-base-product .prdList .thumbnail>a>img{
   display: block;
@@ -144,7 +150,21 @@ body, code {
 .ec-base-product .prdList .description{
   margin-top: 20px;
 font-size: 12px;
-line-height: 18px;}
+line-height: 18px;
+position: absolute;
+left: 0; bottom: 0; top: auto;
+transform: translate(0, 100%);
+width: 100%;
+box-sizing: border-box;
+border: 1px solid #00f;
+transition: transform 0.1s;
+background-color: rgba(255, 255, 255, 0.5);
+padding: 5% 5% 3% 5%;}
+
+.ec-base-product .prdList .prdList__item:hover .description{
+transform: translate(0,0);
+transition: transform 0.3s;
+}
 .ec-base-product .prdList .description .name a{
   text-decoration: none;
 }

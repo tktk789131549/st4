@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오토 연습</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .wrap{
+      margin: 50px auto;
+    width: 90%;
+  max-width: 1400px;
+min-width: 340px;}
+.container{
+  /* background-color: #ff6; */
+  /* border: 4px solid #ccc; */
+}
+.item{
+  background-color: #6ff;
+  text-align: center;
+}
+.grid-container{
+  display: grid;
+  gap: 20px;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+.item{
+  aspect-ratio: 1;
+}
+.item:nth-child(1),
+.item:nth-child(3),
+.item:nth-child(5){
+  background-image: url(images/3f0c7b3663a5a8fdd5fbd8ef7c52e230.png);
+  background-position: center 0;
+  background-size: cover;
+}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container grid-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </div>
+</body>
+</html>
