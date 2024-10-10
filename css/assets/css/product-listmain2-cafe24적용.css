@@ -1,0 +1,27 @@
+.ec-base-product.xans-product-listmain-1 .prdList > li{
+  overflow: hidden;
+}
+.ec-base-product .prdList .prdList__item{
+  /* margin:10px; */
+  position: relative;
+}
+.ec-base-product .prdList .prdList__item:hover .thumbnail{
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.5); 
+ }
+ .ec-base-product .prdList .icon__box {
+visibility: hidden;
+}
+.ec-base-product .prdList .description{
+position: absolute;
+left: 0; bottom: 0; top: auto;
+transform: translate(0, 100%);
+width: 100%;
+box-sizing: border-box;
+border: 1px solid #00f;
+transition: transform 0.1s;
+background-color: rgba(255, 255, 255, 0.5);
+padding: 5% 5% 3% 5%;}
+.ec-base-product .prdList .prdList__item:hover .description{
+  transform: translate(0,0);
+  transition: transform 0.3s;
+  }
