@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid 정렬 item</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .wrap{margin: 20px;}
+    .container{
+      background-color: #ff6;
+      border: 10px solid #ccc;
+    }
+    .item{
+      background-color: dodgerblue;
+      text-align: center;
+    }
+
+    .grid-container{
+      display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(4, 100px);
+    justify-content: space-evenly;
+    }
+
+    .container{
+      min-height: 350px;
+    }
+
+    .grid-container{
+     /* grid-template-rows: repeat(3, 80px); 2*/
+    /* grid-auto-rows: minmax(70px , auto);3*/
+   
+   /* align-content: normal; */
+   /* align-content: start; 크기 고정 크기*/
+    /*align-content: stretch; row 크기 고정값 start*/
+      /* 정렬 요소를 포함하는  요소에 꽉 차 할 때 */
+      grid-template-rows: repeat(3, auto);
+      /* align-content: normal;
+      align-content: stretch; */
+      align-content: stretch; /*해당 크기 auto 값일때*/
+    }
+
+    .item:nth-child(1),
+    .item:nth-child(5){
+      grid-column:span 2;
+
+    }
+    
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="container grid-container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+  </div>
+</div>
+</body>
+</html>
