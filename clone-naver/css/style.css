@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(font.css);
+@import url(variables.css);
+@import url(common.css);
+
+.navercorp.main .cont-summary{
+  background-color: #ccc;
+}
+.navercorp.main .cont-summary .cont__item{}
+
+.navercorp.main .cont-summary .stock{
+  background-color: #ff9;
+  max-width: 400px;
+  margin: 20px auto;
+  aspect-ratio: 4/3;
+}
+
+.navercorp.main .cont-summary .stock .cont__link{
+  padding: 16px;
+  color: #1d1d1d;
+  background-color: #9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.navercorp.main .cont-summary .stock .cont__link .head{
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+}
+.navercorp.main .cont-summary .stock .text-wrap{
+  border: 1px solid #000;
+
+}
+.navercorp.main .cont-summary .stock .text-wrap .num-info{
+  display: block;
+  line-height: 26px;
+  font-size: 12px;
+}
+.navercorp.main .cont-summary .stock .text-wrap .num-info.up::before{
+  content: "▲";
+  color: #ff2c2c;
+}
+.navercorp.main .cont-summary .stock .text-wrap .num-info.down::before{
+  content: "▼";
+  color: #4078ff;
+}
+.navercorp.main .cont-summary .stock .text-wrap .num-info::before{
+  width: 14px;
+  height: 14px;
+}
+
+.navercorp.main .cont-summary .stock .text-wrap .num-info .num{ }
+.navercorp.main .cont-summary .stock .text-wrap .num-info .percent{ }
+.navercorp.main .cont-summary .stock .text-wrap .count{ }
