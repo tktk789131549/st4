@@ -57,3 +57,14 @@
 .navercorp.main .cont-summary .stock .text-wrap .num-info .num{ }
 .navercorp.main .cont-summary .stock .text-wrap .num-info .percent{ }
 .navercorp.main .cont-summary .stock .text-wrap .count{ }
+
+@media (max-width:1919px){}
+/* @media (max-width:1919px){} */
+@media (max-width:1599px){}
+/* @media (max-width:1599px){} */
+@media (max-width:1023px){}
+/* @media (max-width:1023px){} */
+@media (max-width:767px){}
+/* @media (max-width:767px){} */
+@media (max-width:375px){}
+/* @media (max-width:375px){} */
