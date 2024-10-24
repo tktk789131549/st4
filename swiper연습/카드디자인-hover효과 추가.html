@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카드디자인-hover효과 추가</title>
+  <!-- swiper 관련 css -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/assets/css/carddesign-hover.css">
+  <script src="js/swiper-bundle.min.js"></script>
+  <style>
+    .gallery .swiper-button-next, 
+    .gallery .swiper-button-prev{
+      color:#f00;
+    }
+    /* 맨앞, 맨뒤일 경우 네비게이션 표시x */
+    .gallery .swiper-button-next.swiper-button-disabled, 
+    .gallery .swiper-button-prev.swiper-button-disabled{
+      opacity:0;
+    }
+    .gallery .swiper-button-next:after, 
+    .gallery .swiper-button-prev:after{
+      content:"";
+      background: url(../clone-naver/img/common/swiper-btn.png) no-repeat center;
+      background-size: contain;
+      width:88px;
+      height: 88px;;
+      opacity: 0.7;/*hovre시 선명하게 보이기 위해서 추가*/
+    }
+
+    .gallery .swiper-button-next:after{
+      /* <- 이렇게 디자인된 이미지를 180회전 -> 모양으로 변경 */
+      transform: rotate(180deg);
+    }
+    .gallery .swiper-button-next:hover:after, 
+    .gallery .swiper-button-prev:hover:after{
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="swiper gallery">
+      <div class="swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+        <div class="card swiper-slide">
+          <div class="card__thumbnail">
+            <a href="">
+              <img src="../css/background/images/bg.jpg" alt="">
+            </a>
+          </div>
+          <div class="card__description">
+            <div class="card__title">제목 title</div>
+            <div class="card__spec">
+              <p class="text-desc">동해물과 백두산이 마르고 닳도록 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!--//div.card-->
+      
+    </div>
+    <!-- //.swiper-wrapper -->
+    <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+  <!-- //.swiper -->
+</div>
+<script>
+  // new Swiper("선택자", {})
+  // swiper 적용될 제일 상위 요소
+  // 선택자는 문서내에서 유일하게 선택할 수 있는 선택자
+      var swiper = new Swiper(".gallery", {
+      // .swiper-slide 의 css로 지정된 너비를 변경하지 않고 그대로 표시하면서 
+      // .swiper-wrapper 요소 안에 보여줄 수 있는 만큼 .swiper-slide 보여
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      // spaceBetween: 0,
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+</body>
+</html>
